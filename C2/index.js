@@ -58,7 +58,7 @@ const averageGradeOfKumanovo = studenti
     .filter((item) => item.grad === 'Kumanovo')
     .reduce((acc, s) => {
         return acc + s.prosek
-    }, 0) / studenti.filter((item) => item.grad === 'Kumanovo').length
+    }, 0)
 
 console.log(`The average grade of Kumanovo is ${averageGradeOfKumanovo}!`)
 
