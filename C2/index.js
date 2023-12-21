@@ -31,7 +31,7 @@ const studenti = [
 
 const cityGradeAndName = studenti
     .filter((item) => item.grad === 'Skopje' && item.prosek > 7 && item.ime.endsWith('a'))
-    .sort((a, b) => a.ime - b.ime);
+    .sort((a, b) => a.ime[0].localeCompare(b.ime[0]));
 
 console.log(cityGradeAndName)
 
