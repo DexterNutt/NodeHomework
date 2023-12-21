@@ -16,6 +16,7 @@ const studenti = [
   { ime: 'Naumcho', prosek: 6.66, grad: 'Ohrid'},
   { ime: 'Pauncho', prosek: 9.6, grad: 'Ohrid'}
 ];
+
 //? 1. Site studenti od Skopje cie ime zavrshuva na A i imaat prosek nad 7 pordedeni po ime(rastechki)
 //? 2. Site studenti koi imaat prosek nad 9 i ne se od Skopje, podredeni po prosek opagjachki
 //? 3. Prvite 3 studenti koi imaat iminja od 5 karakteri, podredeni po prosek
@@ -30,7 +31,7 @@ const studenti = [
 
 const cityGradeAndName = studenti
     .filter((item) => item.grad === 'Skopje' && item.prosek > 7 && item.ime.endsWith('a'))
-    .sort((a, b) => a.ime[0].localeCompare(b.ime[0]));
+    .sort((a, b) => a.ime - b.ime);
 
 console.log(cityGradeAndName)
 
