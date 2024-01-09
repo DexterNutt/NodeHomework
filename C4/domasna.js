@@ -1,13 +1,3 @@
-/* 
-    `fs.appendFileSync`
-    `fs.unlink`,
-    `fs.existsSync`,
-    `fs.readdir`, 
-    `fs.mkdir`, 
-    `fs.rmdir,
-    `fs.rename`
-*/
-
 const { appendFile } = require('./modules/append.js');
 const { unlinkFile } = require('./modules/unlink');
 const { doesFileExist } = require('./modules/exists.js');
