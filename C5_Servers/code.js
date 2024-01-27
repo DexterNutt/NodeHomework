@@ -11,20 +11,22 @@ const handler = (req, res) => {
       break;
 
     case 'even':
-      let even = name.length % 2;
-      if (even === 0) {
-        res.end(`${name} is even`);
-      } else res.end(`${name} is odd`);
+      const even =
+        name.length % 2 === 0
+          ? res.end(`${name} is even`)
+          : res.end(`${name} is odd`);
       break;
 
     case 'vowels':
-      const vowels = 'AaEeIiOoUu';
+      const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
       let vowelCount = 0;
-      for (let i = 0; i < name.length; i++) {
-        if (vowels.indexOf(name[i]) !== -1) {
-          vowelCount += 1;
+
+      for (let char of name) {
+        if (vowels.includes(char)) {
+          vowelCount++;
         }
       }
+
       res.end(`There are ${vowelCount} vowels in ${name}`);
       break;
 
@@ -50,7 +52,3 @@ server.listen(10000, '127.0.0.1', (err) => {
   if (err) console.log('error');
   console.log('server started on port 10000');
 });
-
-//* 1
-//* 2
-//* 3
