@@ -1,8 +1,0 @@
-//? Da se kreira get ruta koja kje presmetuva bmi
-//? da se kreira post ruta koja kje presmetuva bmi
-//? Da se kreira konverter na pari koj kje konvertira eurotodolar, dolartoeuro, mkdtoeuro,eurotomkd so get i post metoda
-//? da se kreira ruta koja kje presmetuva dali nekoe ime e parno neprano, i kolku karakteri ima i kolku samoglaski so post metoda
-//? Da se kreira ruta koja kako parametar kje prima godina na datum i godina na ragjanje i koja kako respond kje vrakja horoskopski znak soodveten so mesecot so get i post metoda
-//? Da se kreira ruta koja kje presmetuva perimetar i plostina na pravoagolnik so poznati dve strani so get i post metoda
-//? Da se kreira ruta koja kje presmetuva hipotenuza na triagolnik poznavajki gi dvete pomali strani so get i post metoda
-//? Da se kreira ruta koja kje presmetuva nekoj tekst kolku zborovi ima so post metod
