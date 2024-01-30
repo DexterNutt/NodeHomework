@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 app.post('/add', (req, res) => {
   const task = req.body.task;
   tasks.push(task);
-  res.render('index', { tasks });
   res.redirect('/');
 });
 
